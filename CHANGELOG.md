@@ -3,6 +3,9 @@
 *Important!*
 - The next release will be 1.0.0, which means that master will contain breaking changes.
 
+*Enhancements*
+- Warm the ResourceCache before running resource.sync to improve sync performance. ([#603](https://github.com/Shopify/kubernetes-deploy/pull/603))
+
 ## 0.31.1
 
 *Bug Fixes*
