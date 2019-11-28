@@ -136,8 +136,6 @@ module Krane
       out_err, st = Open3.capture2e("EJSON_KEYDIR=#{key_dir} ejson decrypt #{@ejson_file}")
       raise EjsonSecretError, out_err unless st.success?
       JSON.parse(out_err)
-    rescue JSON::ParserError
-      raise EjsonSecretError, "Failed to parse decrypted ejson"
     end
 
     def fetch_private_key_from_secret
