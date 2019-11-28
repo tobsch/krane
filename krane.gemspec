@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'krane/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "krane"
+  spec.name          = "tobsch-krane"
   spec.version       = Krane::VERSION
   spec.authors       = ["Katrina Verey", "Daniel Turner", "Kir Shatrov"]
   spec.email         = ["ops-accounts+shipit@shopify.com"]
